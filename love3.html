@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Putih</title>
+    <style>
+        body {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("intan3.jpg");
+            background-color: #ffffff;
+            background-size: cover; 
+            background-position: center center; 
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            opacity: 0;
+            animation: fadeIn 1s ease-in-out forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        h1 {
+            color:white; 
+            font-weight: bold;
+            font-size: 50px;
+        }
+
+        h2 {
+            color: white;
+            font-size: 25px;
+            font-weight: bold;
+            margin-top: 10px;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #000000; 
+            color: #ffffff; 
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+            font-weight: bold;
+            border-radius: 8px;
+        }
+
+        #tombol-baru {
+            margin-bottom: 40px;
+        }
+    </style>
+</head>
+<body>
+    <h1> 💐 CONGRATULATIONS 💐</h1>
+    <h2> Selamat ya... dah wisudah nich... Gweh doain semoga apapun pilihan sekolah lo nanti,<br>
+         bakal jadi jalan lu buat kehidupan yang sukses ke depannya.<br> Capek ya, hafalannya?<br>
+          gw tau kok cape betul aseli. 
+         tapi gw yakin rasa capek ntuh gak bakal sia-sia nanti. oh iya,
+          nanti klo dah di sekul baru, inget.....
+    </h2>
+     <button id="tombol-baru">Pencet Biar Tahu</button>
+    <a href="love.html"><button>Balik Lagi</button></a>
+
+    <script>
+        document.getElementById('tombol-baru').addEventListener('click', function() {
+            var newText = document.createElement('h2');
+            newText.textContent = "Ga boleh gotak sama kakak kelas";
+            newText.style.fontFamily = "Verdana, sans-serif";
+            newText.style.fontWeight = "bold";
+            newText.style.color = "grey";
+            newText.style.textAlign = "center";
+            document.body.insertBefore(newText, document.querySelector("a"));
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Web Buat Intan</title>
+    <style>
+        body {
+            margin: 0;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("intan5.jpg");
+            display: flex;
+            background-position: center;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            transform: translateY(-50px); 
+            opacity: 0; 
+            animation: slideIn 1s ease-in-out forwards; 
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(-50px); 
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0); 
+            }
+        }
+
+        h1 {
+            color: grey;
+            font-family: Verdana, sans-serif;
+            font-weight: bold;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #000;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            margin-top: 45px;
+            font-family: Verdana, sans-serif;
+            font-weight: bold;
+            border-radius: 8px;
+        }
+
+        .deskone {
+            color: #fff;
+            font-size: medium;
+            font-weight: bold;
+            font-family: Verdana, sans-serif;
+            margin-top: 10px;
+            text-align: center; 
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+       
+    </style>
+</head>
+<body>
+    <h1>✿Pesan-Pesan✿</h1>
+    <div class="deskone">
+        <h3>Selamat karena udah lulus ya...<br>
+     inget, harus semangat lagi belajarnya jangan males malesan<br>
+    oh iya, bukunya ntuh, dibaca<br>
+    inget, apa aja yang udah lu pelajarin di fi jangan ditinggal begitu aja<br>
+    kesehatan luwh juga dijaga yeeek jangan banyak jajan yang aneh-aneh<br>
+    And.... gw mau minta maaf yahh klo selama ini gwe ada salah ke eluwh<br>
+    (gw yakin gak ada sih) awokawokawok canda..<br>
+    
+
+</h3>
+    </div>
+    <br>
+
+    <a href="love.html">
+        <button>Balik!</button>
+    </a>
+</body>
+</html>

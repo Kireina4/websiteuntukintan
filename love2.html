@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Web Buat Intan</title>
+    <style>
+        body {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("intan2.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: white;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            transform: translateY(-50px); 
+            opacity: 0; 
+            animation: slideIn 1s ease-in-out forwards;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(-50px); /* Mulai dari translasi ke atas */
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h1 {
+            font-size: 50px; 
+            margin-top: 40px; 
+            color:white; 
+            font-weight: bold; 
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #000;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            margin-top: 25px; 
+            font-weight: bold;
+            border-radius: 8px;
+        }
+
+        .deskone {
+            margin-top: 20px;
+            text-align: center;
+            color: white;
+            font-size: 20px;
+        }
+       
+    </style>
+</head>
+<body>
+    <h1>✿ WELCOME DEAR INTAN ✿</h1>
+    <div class="deskone">
+        <h3>Di sini gw cuman mau kasih hadiah balik ke eluwh!<br>
+            kemaren kan pas gw lulus lu kasih gw kayak scrapbook gituu... nah klo gw 
+            gak bisa buat kek gtu.<br>
+            tapi aseli, bagus scrapbook eluwh! nah gweh cuman bisa buatin ini,<br>
+             yaaa walau tampilannya sederhana banget but.. i hope you like it.<br>
+            maklumlah... masih
+            programmer pemula puh....<br>
+            nah habis ini balik lagi ke halaman awal trus pencet tombol sesuai urutan, Awal, Kesan, Pesan-pesan, Gallery, Fin</h3>
+    </div>
+    <br>
+
+    <a href="love.html">
+        <button>Balik Lagi Ke HOME!</button>
+    </a>
+</body>
+</html>
